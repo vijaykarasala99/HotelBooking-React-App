@@ -1,0 +1,50 @@
+.booknow {
+    height: 27.2cm;
+    margin-top: 2cm;
+    display: flex;
+    margin-left: 2cm;
+}
+/* 
+form {
+    width: 60%;
+    text-align: center;
+}
+
+form > div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+label {
+    font-size: large;
+    margin-left: -16cm;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-left: 8cm;
+}
+
+input[type="checkbox"] {
+    margin-left: -23cm;
+}
+
+button[type="submit"] {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+.error-message {
+    color: red;
+    margin-left: -20.6cm;
+}

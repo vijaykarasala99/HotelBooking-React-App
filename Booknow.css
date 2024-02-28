@@ -1,0 +1,132 @@
+.navbar30 {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 2cm;
+    transition: background-color 0.3s;
+}
+
+.navbar30 a {
+    color: lightgray;
+    text-decoration: none;
+    margin-left: 0cm;
+    margin-top: 0.5cm;
+    font-size: larger;
+    transition: color 0.3s;
+    padding: 100% 2rem;
+    margin: 0.7rem 0;
+}
+
+.navbar30 a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar30 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar30 li {
+    margin-left: 2cm; 
+    margin-top: 0.5cm;
+    font-size: larger;
+    transition: background-color 0.3s;
+}
+
+.navbar30 li:hover {
+    background-color: black;
+    color: white;
+    border-bottom: 5px solid white; 
+    transition: background-color 0.3s, color 0.3s, border-bottom 0.3s; 
+} 
+
+
+
+
+/ Card styles /
+.card100 {
+    width: 39cm;
+    height: 3cm;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+    background: none;
+    transition: background-color 0.3s, box-shadow 0.5s;
+}
+
+.cardbody {
+    background: url(https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-102132.jpg?w=2000&t=st=1707116618~exp=1707117218~hmac=7c352cf70d19be0af02385effcf4cdc4887ff02091623b34b5882cb1708cc825);
+}
+
+.card100 a.btn {
+    margin-left: 30cm;
+    width: 8cm;
+    margin-top: -1.5cm;
+    background-color: lightgrey;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+}
+
+.card100:hover {
+    background-color: #f5f5f5;
+    border: 2px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); 
+}
+
+
+.card100:hover a.btn {
+    background-color: #ddd;
+    border-color: #333;
+    color: #333;
+}
+
+.card11 {
+    width: 39cm;
+    height: 3cm;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+    background: none;
+    transition: background-color 0.3s, box-shadow 0.5s;
+}
+
+
+.card11 a.btn {
+    margin-left: 30cm;
+    width: 8cm;
+    margin-top: -1.5cm;
+    background-color: lightgrey;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+}
+
+.card11:hover {
+    background-color: #f5f5f5;
+    border: 2px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+ }
+
+.card11:hover a.btn {
+    background-color: #ddd;
+    border-color: #333;
+    color: #333;
+}
+
+.totalcontainer{
+   align-content: center;
+}
+.hover-effect:hover {
+    cursor: pointer;
+ } 
+
+
+
+.menu30:hover {
+    background-color:#abb0b3; 
+    cursor: pointer; }
+  
+  
+
