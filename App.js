@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Bookings />} />
         <Route path="/PaymentForm" element={<PaymentForm />} />
+
       </Routes>
     </Router>
 

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import PaymentForm from './PaymentForm';
 import './styles.css';
 
+
+
 function Customer() {
   const [bookings, setBookings] = useState([]);
   const [formData, setFormData] = useState({
@@ -192,7 +194,8 @@ function Customer() {
         <Link to="/PaymentForm" style={{ textDecoration: 'none' }}>
           <button type="submit">Go To Booking History</button>
         </Link>
-        <br /><br />
+        <br></br>
+       
 
         <div style={{textAlign:'center'}}>Total Price: ₹{totalPrice.toFixed(2)}</div>
         <div style={{textAlign:'center'}}>GST: {priceDetails.gstPercentage * 100}%</div>
