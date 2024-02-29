@@ -21,9 +21,9 @@ function Customer() {
 
   return (
     <>
-      <div style={{ backgroundColor: "light", minHeight: "100vh", padding: "20px" }}>
+      <div style={{ backgroundColor: "light", minHeight: "100vh", padding: "20px"}}>
         <div style={{ maxWidth: "800px", margin: "5 auto" }}>
-          <h2>Your Booking History</h2>
+          <h2 style={{ backgroundColor: "lightblue",textAlign:'center'}}>Your Booking History</h2>
           {bookings.map(booking => (
             <div key={booking.id} style={{ marginBottom: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px' }}>
               <div style={{ display: 'flex', flexDirection: 'column' }}>

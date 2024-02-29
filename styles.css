@@ -1,0 +1,80 @@
+/* styles.css */
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    background-color: lightblue;
+    height: 100vh; /* Adjust to fill the entire viewport height */
+  }
+  
+  /* Form styles */
+  form {
+    padding: 20px;
+    width: 50%; /* Adjust the width of the form */
+    max-width: 350px; /* Set a maximum width for larger screens */
+  }
+  
+  /* Heading styles */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Input field styles */
+  input[type="date"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Checkbox styles */
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Error message styles */
+  .error-message {
+    color: red;
+  }
+  
+  /* Button styles */
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block; /* Ensure buttons are on their own line */
+    margin: 10px auto; /* Center the button */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Link button styles */
+  .link-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .link-button:hover {
+    background-color: #005f6b;
+  }
+  

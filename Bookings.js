@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import PaymentForm from './PaymentForm';
+import './styles.css';
 
 function Customer() {
   const [bookings, setBookings] = useState([]);
@@ -136,8 +137,10 @@ function Customer() {
   
   
   return (
-    <div style={{ backgroundColor: "lightblue", height: "27.2cm" }}>
+   
+    <div style={{ backgroundColor: "lightblue", height: "27.2cm",alignContent:'center' }}>
       <form onSubmit={handleSubmit} style={{ marginLeft: "17cm" }}>
+      <h1>BOOK YOUR ROOMS</h1>
         <label htmlFor="roomtype">Room Type :</label>
         <select id="roomtype" name="roomtype" onChange={handleInputChange}>
           <option value="">SELECT ROOM TYPE</option>
@@ -185,15 +188,16 @@ function Customer() {
         </div>
         {checkboxError && <div style={{ color: "red" }}>{checkboxError}</div>}
         <button type="submit">Pay Now</button>
-        <br /><br />
+
         <Link to="/PaymentForm" style={{ textDecoration: 'none' }}>
           <button type="submit">Go To Booking History</button>
         </Link>
         <br /><br />
-        <div>Total Price: ₹{totalPrice.toFixed(2)}</div>
-        <div>GST: {priceDetails.gstPercentage * 100}%</div>
-        <div>Discount: {priceDetails.discountPercentage * 100}%</div>
-        <div>Net Total: ₹{totalPrice.toFixed(2)}</div>
+
+        <div style={{textAlign:'center'}}>Total Price: ₹{totalPrice.toFixed(2)}</div>
+        <div style={{textAlign:'center'}}>GST: {priceDetails.gstPercentage * 100}%</div>
+        <div style={{textAlign:'center'}}>Discount: {priceDetails.discountPercentage * 100}%</div>
+        <div style={{textAlign:'center'}}>Net Total: ₹{totalPrice.toFixed(2)}</div>
       </form>
       <div>
       </div>
