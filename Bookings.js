@@ -5,7 +5,6 @@ import PaymentForm from './PaymentForm';
 import './styles.css';
 
 
-
 function Customer() {
   const [bookings, setBookings] = useState([]);
   const [formData, setFormData] = useState({
@@ -195,7 +194,10 @@ function Customer() {
           <button type="submit">Go To Booking History</button>
         </Link>
         <br></br>
-       
+        <Link to="/Pagination" style={{ textDecoration: 'none' }}>
+          <button type="submit">Pagination</button>
+        </Link>
+        <br></br>
 
         <div style={{textAlign:'center'}}>Total Price: ₹{totalPrice.toFixed(2)}</div>
         <div style={{textAlign:'center'}}>GST: {priceDetails.gstPercentage * 100}%</div>

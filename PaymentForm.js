@@ -13,6 +13,7 @@ function Customer() {
     adults: "",
     children: "",
     extrabeds: false,
+    nettotal:""
   });
 
   useEffect(() => {
@@ -37,6 +38,7 @@ function Customer() {
       adults: booking.adults,
       children: booking.children,
       extrabeds: booking.extrabeds,
+      nettotal: booking.nettotal
     });
   };
 
@@ -94,6 +96,10 @@ function Customer() {
             <label>Extra Beds:</label>
             <span>{booking.extrabeds ? 'Yes' : 'No'}</span>
           </div>
+          <div>
+            <label>Net Total:</label>
+            <span>{booking.nettotal}</span>
+          </div>
           <button onClick={() => handleUpdateButtonClick(booking)}>Update</button>
         </div>
       ))}
@@ -121,6 +127,10 @@ function Customer() {
           <input type="checkbox" name="extrabeds" checked={updateFormData.extrabeds} onChange={handleInputChange} />
           Extra Beds
         </label>
+        <br></br>
+        <label htmlFor="nettotal">Net Total:</label>
+        <input type="number" name="nettotal" value={updateFormData.nettotal} onChange={handleInputChange} />
+
         <button type="submit">Update</button>
       </form>
     </div>
